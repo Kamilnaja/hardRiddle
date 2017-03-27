@@ -3,6 +3,10 @@
  */
 var app = angular.module('mainApp', ['ngRoute']);
 
+app.config(['$locationProvider', function ($locationProvider) {
+    $locationProvider.hashPrefix('');
+}]);
+
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
@@ -10,6 +14,9 @@ app.config(function($routeProvider) {
         })
         .when('/another', {
             template: 'Welcome user again'
+        })
+        .when('/thirdriddle', {
+            template: 'Let fight with third riddle'
         })
         .otherwise({
             redirectTo: '/'
