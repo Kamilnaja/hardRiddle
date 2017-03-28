@@ -15,7 +15,7 @@ app.config(function($routeProvider) {
             template:
                 `<h1>Welcome user on default</h1>
                 <p>Lets fight with first riddle</p>
-                <p>Gdy będziesz gotowy, wpisz odpowiedź w inpu</p>
+                <p>Gdy będziesz gotowy, wpisz odpowiedź w input</p>
 `
         })
         .when('/another', {
