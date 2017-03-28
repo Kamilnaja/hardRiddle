@@ -9,17 +9,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
     <script src="controller.js"></script>
+    <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
 <body ng-app="mainApp">
 <div ng-controller="MyController">
+    <!--templates goes here-->
     <div ng-view></div>
     <div class="userInput">
         <label for="answer">Odpowiedź brzmi : </label>
-        <input type="text" id="answer">
-        <button class="btn btn-submit">Wyślij</button>
-
+        <input
+                type="text"
+                id="answer"
+                ng-model="userAnswer"
+                ng-trim="true"
+                required
+        >
+        <p>{{userAnswer}}</p>
+        <button
+                class="btn btn-submit"
+                ng-click="evaluatePassword()">Wyślij</button>
+        <!--jeśli ng-model jest taki sam jak hasło, to wyślij -->
+        {{pass1}}
     </div>
 </div>
+<footer>
+    <p>Pomysł i realizacja - Kamil Naja</p>
+</footer>
 
 </body>
 </html>
