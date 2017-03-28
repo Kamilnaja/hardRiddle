@@ -3,6 +3,7 @@
  */
 
 var app = angular.module('mainApp', ['ngRoute']);
+
 app.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.hashPrefix('');
 }]);
@@ -10,13 +11,12 @@ app.config(['$locationProvider', function ($locationProvider) {
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'views/home.html'
+            templateUrl: 'views/home.html',
+            controller: 'homeController'
+
         })
         .when('/another', {
             templateUrl: 'views/firstRiddle.html'
-        })
-        .when('/thirdriddle', {
-            template: `Let fight with third riddle`
         })
         .otherwise({
             redirectTo: '/'
@@ -32,5 +32,7 @@ app.controller('MyController', function ($scope) {
             console.log("dupa");
         }
     }
-
+});
+//declaration of second controller
+app.controller('homeController', function ($scope) {
 });
