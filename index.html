@@ -11,7 +11,15 @@
     <script src="controller.js"></script>
 </head>
 <body ng-app="mainApp">
+<div ng-controller="MyController">
     <div ng-view></div>
+    <div class="userInput">
+        <label for="answer">Odpowiedź brzmi : </label>
+        <input type="text" id="answer">
+        <button class="btn btn-submit">Wyślij</button>
+
+    </div>
+</div>
 
 </body>
 </html>
