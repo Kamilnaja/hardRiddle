@@ -18,6 +18,9 @@ app.config(function($routeProvider) {
         .when('/another', {
             templateUrl: 'views/firstRiddle.html'
         })
+        .when('/xyz', {
+            templateUrl: 'views/metalBand.html'
+        })
         .otherwise({
             redirectTo: '/'
         })
@@ -37,12 +40,14 @@ app.controller('MyController', function ($scope) {
 app.controller('ExampleController', ['$scope', function($scope){
     $scope.riddle1 = {};
     $scope.pass1 = "zegar";
+    $scope.pass2 = "szatan";
     $scope.passValue = false;
     $scope.compare = function () {
         $scope.result = angular.equals($scope.pass1, $scope.riddleAnswer1);
         if ($scope.result === true){
-            $scope.passValue = true;
+            $scope.passValue1 = true;
         }
+
     }
 }]);
 
