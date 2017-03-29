@@ -29,10 +29,20 @@ app.controller('MyController', function ($scope) {
     $scope.evaluatePassword = function () {
         //sprawdź czy jest równe hasło i wartośc inputa
         if (userAnswer === $scope.secret) {
-            console.log("dupa");
+
         }
     }
 });
+
+app.controller('ExampleController', ['$scope', function($scope){
+    $scope.riddle1 = {pass1: "zegar"};
+    $scope.riddleAnswer1 = {pass1: ""};
+    $scope.compare = function () {
+        $scope.result = angular.equals($scope.riddle1.pass1, $scope.riddleAnswer1.pass1);
+        alert("odpowiedź prawidlowa");
+    }
+}]);
+
 //declaration of second controller
-app.controller('homeController', function ($scope) {
-});
+
+
