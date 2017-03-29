@@ -1,24 +1,12 @@
 <div ng-controller="ExampleController">
     <h2>Zapraszamy do zapoznania się z pierwszą zagadką</h2>
     <p>Nie je nie pije a chodzi i żyje</p>
-    <!--<input-->
-    <!--type="text"-->
-    <!--id="answer"-->
-    <!--ng-model="userAnswer"-->
-    <!--ng-trim="true"-->
-    <!--ng-required="true"-->
-    <!--&gt;-->
-    <!--<p>{{userAnswer}}</p>-->
-
-
-    <!--<button class="btn">Wyślij</button>-->
-
     <form novalidate>
         <button value="Compare" ng-click="compare()">Porównaj</button>
         <hr>
-        <input type="text" ng-model="riddleAnswer1.pass1"> <br>
-        {{riddleAnswer1.pass1}}
-        <pre>{{result}}</pre>
-
+        <input type="text" ng-model="riddleAnswer1"> <br>
     </form>
+    <div ng-show="passValue">
+        <a href="#">Następna zagadka</a>
+    </div>
 </div>

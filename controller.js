@@ -24,22 +24,25 @@ app.config(function($routeProvider) {
 });
 
 app.controller('MyController', function ($scope) {
-    $scope.userAnswer = "";
-    $scope.pass1 = "secret";
+    $scope.riddleAnswer1 = "";
+    $scope.pass1 = "";
     $scope.evaluatePassword = function () {
         //sprawdź czy jest równe hasło i wartośc inputa
         if (userAnswer === $scope.secret) {
-
+//przenieś do następnej strony
         }
     }
 });
 
 app.controller('ExampleController', ['$scope', function($scope){
-    $scope.riddle1 = {pass1: "zegar"};
-    $scope.riddleAnswer1 = {pass1: ""};
+    $scope.riddle1 = {};
+    $scope.pass1 = "zegar";
+    $scope.passValue = false;
     $scope.compare = function () {
-        $scope.result = angular.equals($scope.riddle1.pass1, $scope.riddleAnswer1.pass1);
-        alert("odpowiedź prawidlowa");
+        $scope.result = angular.equals($scope.pass1, $scope.riddleAnswer1);
+        if ($scope.result === true){
+            $scope.passValue = true;
+        }
     }
 }]);
 
