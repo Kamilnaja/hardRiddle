@@ -1,0 +1,17 @@
+<div ng-controller="ExampleController">
+    <h2>Spotkanie</h2>
+    <div class="img-wrapper">
+        <img src="../img/img1.jpg" alt="">
+    </div>
+    <p>Ewa spóźniła się kilka minut</p>
+    <p>- Przepraszam, ale gdy tutaj szłam, spotkało mnie coś strasznego. Gdy wysiadałam z autobusu, zauważayłam na przystanku ogromnego wilczura. Szybko zawróciłam i wysiadłam na następnym przystanku. </p>
+    <form novalidate>
+        <hr>
+        <input type="text" ng-model="riddleAnswer1">
+        <button value="Compare" ng-click="compare()">Sprawdź</button>
+        <br>
+    </form>
+    <div ng-show="passValue1" class="next">
+        <a href="#/xyz">Przejdź dalej</a>
+    </div>
+</div>

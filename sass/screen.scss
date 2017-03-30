@@ -17,15 +17,16 @@ html {
 }
 
 .img-wrapper {
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  background-color: darkslategrey;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: solid brown 5px;
+
   img {
     width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: inline-block;
+    border: solid brown 5px;
+    max-height: 280px;
+    filter: grayscale(100%);
+
   }
 }
 footer {
@@ -37,4 +38,5 @@ footer {
 }
 .next {
   padding-top: 20px;
+  display: inline-block;
 }
