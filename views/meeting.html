@@ -1,17 +1,19 @@
 <div ng-controller="ExampleController">
-    <h2>Spotkanie</h2>
+    <h2>Nazywaj rzeczy po imieniu, a zmienią się w oka mgnieniu</h2>
     <div class="img-wrapper">
-        <img ng-src="img/img1.jpg" alt="">
+        <img ng-src="img/mask.jpg" alt="">
     </div>
     <p>Ewa spóźniła się kilka minut</p>
     <p>- Przepraszam, ale gdy tutaj szłam, spotkało mnie coś strasznego. Gdy wysiadałam z autobusu, zauważayłam na przystanku ogromnego wilczura. Szybko zawróciłam i wysiadłam na następnym przystanku. </p>
+    <p>- Nie zwlekajmy więc, udajmy się w nasza podróż</p>
     <form novalidate>
         <hr>
-        <input type="text" ng-model="riddleAnswer1">
+        <input type="text" ng-model="riddleAnswer3">
         <button value="Compare" ng-click="compare()">Sprawdź</button>
         <br>
     </form>
-    <div ng-show="passValue1" class="next">
-        <a href="#/xyz">Przejdź dalej</a>
+
+    <div ng-show="passValue3" class="next">
+        <a href="#/last">Przejdź dalej</a>
     </div>
 </div>
