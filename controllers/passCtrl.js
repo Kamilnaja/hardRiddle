@@ -20,6 +20,5 @@ app.controller('PasswordController', ['$scope', function($scope){
         if ($scope.result3 === true){
             $scope.passValue3 = true;
         }
-
     }
 }]);
