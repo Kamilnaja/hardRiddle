@@ -8,12 +8,12 @@ app.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.hashPrefix('');
 }]);
 
+//routings
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'views/home.html',
             controller: 'homeController'
-
         })
         .when('/opening', {
             templateUrl: 'views/opening.html'
@@ -32,28 +32,19 @@ app.config(function($routeProvider) {
         })
 });
 
-app.controller('MyController', function ($scope) {
-    $scope.riddleAnswer1 = "";
-    $scope.pass1 = "";
-    $scope.evaluatePassword = function () {
-        //sprawdź czy jest równe hasło i wartośc inputa
-        if (userAnswer === $scope.secret) {
-//przenieś do następnej strony
-        }
-    }
-});
-
-app.controller('ExampleController', ['$scope', function($scope){
+//password check
+app.controller('PasswordController', ['$scope', function($scope){
     $scope.riddle1 = {};
     $scope.pass1 = "urban exploration";
     $scope.pass2 = "murder";
     $scope.pass3 = "maska";
     $scope.passValue = false;
     $scope.compare = function () {
-        $scope.result = angular.equals($scope.pass1, $scope.riddleAnswer1);
+        $scope.result1 = angular.equals($scope.pass1, $scope.riddleAnswer1);
         $scope.result2 = angular.equals($scope.pass2, $scope.riddleAnswer2);
         $scope.result3 = angular.equals($scope.pass3, $scope.riddleAnswer3);
-        if ($scope.result === true){
+
+        if ($scope.result1 === true){
             $scope.passValue1 = true;
         }
         if ($scope.result2 === true){
