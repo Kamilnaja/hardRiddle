@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: silver;
+  font-size: 18px;
 }
 html {
   box-sizing: border-box;
@@ -39,4 +40,16 @@ footer {
 .next {
   padding-top: 20px;
   display: inline-block;
+}
+.bottle {
+  position: absolute;
+  right: -200px;
+  top: 200px;
+  color: black;
+  transition: 0.5s ease;
+  &:hover {
+    color: lighten(black, 10%);
+    cursor: default;
+    font-size: 30px;
+  }
 }

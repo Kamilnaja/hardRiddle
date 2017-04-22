@@ -28,6 +28,11 @@ app.config(function($routeProvider) {
             controller: 'PasswordController'
 
         })
+        .when('/water', {
+            templateUrl: 'views/water.html',
+            controller: 'PasswordController'
+
+        })
         .when('/last', {
             templateUrl: 'views/last.html',
             controller: 'PasswordController'

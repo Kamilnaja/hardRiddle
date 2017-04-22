@@ -2,19 +2,20 @@
 body {
   background-color: black;
   color: silver;
+  font-size: 18px;
 }
 
-/* line 5, ../sass/screen.scss */
+/* line 6, ../sass/screen.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -23,7 +24,7 @@ html {
   position: relative;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .img-wrapper img {
   width: 100%;
   max-width: 500px;
@@ -34,7 +35,7 @@ html {
   filter: grayscale(100%);
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 footer {
   bottom: 0;
   padding-left: 20px;
@@ -43,8 +44,23 @@ footer {
   margin: 0 auto;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .next {
   padding-top: 20px;
   display: inline-block;
+}
+
+/* line 44, ../sass/screen.scss */
+.bottle {
+  position: absolute;
+  right: -200px;
+  top: 200px;
+  color: black;
+  transition: 0.5s ease;
+}
+/* line 50, ../sass/screen.scss */
+.bottle:hover {
+  color: #1a1a1a;
+  cursor: default;
+  font-size: 30px;
 }
