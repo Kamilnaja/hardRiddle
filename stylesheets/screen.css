@@ -1,42 +1,47 @@
-/* line 2, ../sass/screen.scss */
+/* line 3, ../sass/screen.scss */
 h2 {
   text-transform: uppercase;
+  font-family: "Open Sans", "Calibri", sans-serif;
 }
 
-/* line 5, ../sass/screen.scss */
+/* line 7, ../sass/screen.scss */
 a {
   color: cornflowerblue;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
-  background-color: black;
+  background-color: #171e25;
   color: silver;
   font-size: 16px;
   font-family: 'Merriweather', serif;
   line-height: 1.5;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .container {
   max-width: 700px;
   margin: 0 auto;
-  background-color: black;
+  background-color: #171e25;
   padding: 10px 20px;
   position: relative;
 }
 
 /* line 34, ../sass/screen.scss */
+.img-wrapper {
+  background-color: #171e25;
+}
+/* line 36, ../sass/screen.scss */
 .img-wrapper img {
   width: 100%;
   max-width: 500px;
@@ -47,7 +52,7 @@ html {
   filter: grayscale(100%);
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 footer {
   bottom: 0;
   padding-left: 20px;
@@ -56,13 +61,13 @@ footer {
   margin: 0 auto;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .next {
   padding-top: 20px;
   display: inline-block;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .bottle {
   position: absolute;
   right: -200px;
@@ -71,23 +76,24 @@ footer {
   transition: 0.5s ease;
   cursor: pointer;
 }
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .bottle:hover {
   color: #1a1a1a;
   cursor: default;
   font-size: 30px;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .number {
   position: relative;
-  bottom: 10px;
+  bottom: 7px;
   display: block;
   float: left;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 50px;
   height: 50px;
-  background-color: red;
+  background-color: #fff;
+  color: #171e25;
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
