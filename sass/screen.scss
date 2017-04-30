@@ -1,14 +1,26 @@
+//typography
+h2 {
+  text-transform: uppercase;
+}
+a {
+  color: cornflowerblue;
+}
 body {
   background-color: black;
   color: silver;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;;
+  line-height: 1.5;
 }
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -27,9 +39,9 @@ html {
     border: solid brown 5px;
     max-height: 280px;
     filter: grayscale(100%);
-
   }
 }
+
 footer {
   bottom: 0;
   padding-left: 20px;
@@ -37,19 +49,37 @@ footer {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .next {
   padding-top: 20px;
   display: inline-block;
 }
+
 .bottle {
   position: absolute;
   right: -200px;
   top: 200px;
   color: black;
   transition: 0.5s ease;
+  cursor: pointer;
   &:hover {
     color: lighten(black, 10%);
     cursor: default;
     font-size: 30px;
   }
+}
+
+.number {
+  position: relative;
+  bottom: 10px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
 }
