@@ -40,6 +40,10 @@ app.config(function($routeProvider) {
             templateUrl: 'views/last.html',
             controller: 'PasswordController'
         })
+        .when('/help', {
+            templateUrl: 'views/help.html',
+            controller: 'PasswordController'
+        })
         .otherwise({
             redirectTo: '/'
         })
