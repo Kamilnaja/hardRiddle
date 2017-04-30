@@ -4,9 +4,11 @@ h2 {
   text-transform: uppercase;
   font-family: "Open Sans", "Calibri", sans-serif;
 }
+
 a {
   color: cornflowerblue;
 }
+
 body {
   background-color: $motive;
   color: silver;
@@ -45,9 +47,6 @@ html {
 }
 
 footer {
-  bottom: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -61,11 +60,11 @@ footer {
   position: absolute;
   right: -200px;
   top: 200px;
-  color: black;
+  color: $motive;
   transition: 0.5s ease;
   cursor: pointer;
   &:hover {
-    color: lighten(black, 10%);
+    color: lighten($motive, 30%);
     cursor: default;
     font-size: 30px;
   }
@@ -85,4 +84,14 @@ footer {
   text-align: center;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 95vh;
+}
+
+main {
+  flex: 1
 }
