@@ -3,18 +3,26 @@ $motive: #171e25;
 h2 {
   text-transform: uppercase;
   font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 25px;
 }
-
+h1 {
+  font-size: 31.25px;
+  margin-bottom: 30px;
+}
 a {
   color: cornflowerblue;
 }
-
+p {
+  line-height: 1.5rem;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
 body {
   background-color: $motive;
   color: silver;
   font-size: 16px;
   font-family: 'Merriweather', serif;;
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
 html {
@@ -78,7 +86,6 @@ footer {
   display: block;
   float: left;
   margin-right: 10px;
-  margin-bottom: 100px;
   width: 50px;
   height: 50px;
   background-color: #fff;

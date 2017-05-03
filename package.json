@@ -1,0 +1,24 @@
+{
+  "name": "hardriddle",
+  "version": "1.0.0",
+  "description": "włączenie serwera - http-server -o",
+  "main": "myApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamilnaja/hardRiddle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamilnaja/hardRiddle/issues"
+  },
+  "homepage": "https://github.com/Kamilnaja/hardRiddle#readme",
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "http-server": "^0.10.0"
+  }
+}

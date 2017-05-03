@@ -2,33 +2,47 @@
 h2 {
   text-transform: uppercase;
   font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 25px;
 }
 
 /* line 8, ../sass/screen.scss */
+h1 {
+  font-size: 31.25px;
+  margin-bottom: 30px;
+}
+
+/* line 12, ../sass/screen.scss */
 a {
   color: cornflowerblue;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
+p {
+  line-height: 1.5rem;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 20, ../sass/screen.scss */
 body {
   background-color: #171e25;
   color: silver;
   font-size: 16px;
   font-family: 'Merriweather', serif;
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -37,11 +51,11 @@ html {
   position: relative;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .img-wrapper {
   background-color: #171e25;
 }
-/* line 38, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .img-wrapper img {
   width: 100%;
   max-width: 500px;
@@ -52,7 +66,7 @@ html {
   filter: grayscale(100%);
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 footer {
   max-width: 700px;
   margin: 0 auto;
@@ -60,13 +74,13 @@ footer {
   padding-right: 20px;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .next {
   padding-top: 20px;
   display: inline-block;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .bottle {
   position: absolute;
   right: -200px;
@@ -75,21 +89,20 @@ footer {
   transition: 0.5s ease;
   cursor: pointer;
 }
-/* line 68, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .bottle:hover {
   color: #526b83;
   cursor: default;
   font-size: 30px;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .number {
   position: relative;
   bottom: 7px;
   display: block;
   float: left;
   margin-right: 10px;
-  margin-bottom: 100px;
   width: 50px;
   height: 50px;
   background-color: #fff;
@@ -100,14 +113,14 @@ footer {
   vertical-align: middle;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body {
   display: flex;
   flex-flow: column;
   min-height: 95vh;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 main {
   flex: 1;
 }
